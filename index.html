@@ -528,7 +528,11 @@ fill: #6a6a6a;
     </div>
   </div>
 </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script>
+    if (typeof bodymovin === 'undefined' && typeof lottie !== 'undefined') { window.bodymovin = lottie; }
+
 const cloudBoundary = document.querySelector('.cloud-boundary');
 const bike = document.querySelector('.bike');
 const bmContainer = document.querySelector('#bm');
